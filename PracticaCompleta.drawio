@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-10T02:39:41.390Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="NcoDLT4tsqn7mSzZJLJe" version="22.1.17" type="github" pages="14">
+<mxfile host="app.diagrams.net" modified="2024-01-10T02:43:12.731Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="BmoRbVBZcEnJLioPohuI" version="22.1.17" type="github" pages="14">
   <diagram name="Robocode" id="bfwevroLSj_1XgWTwHws">
     <mxGraphModel dx="785" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1144,7 +1144,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mGrC5e2M_3JzVijyAvSn" name="Magnitudes Fisicas">
-    <mxGraphModel dx="1831" dy="5001" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1598" dy="4858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1565,16 +1565,16 @@
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-48" value="MagnitudFisica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="-3156" width="160" height="160" as="geometry" />
+          <mxGeometry x="-130" y="-3156" width="250" height="160" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-49" value="- unidad : unidadFisica;&lt;br&gt;- cifra : double;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-48">
-          <mxGeometry y="26" width="160" height="44" as="geometry" />
+          <mxGeometry y="26" width="250" height="44" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-48">
-          <mxGeometry y="70" width="160" height="8" as="geometry" />
+          <mxGeometry y="70" width="250" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="M0lkcr2VyGRREyXFEmg2-51" value="+ getCifra():double;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setCifra(double);&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getUnidad():UnidadFisica;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setUnidad(UnidadFisica);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-48">
-          <mxGeometry y="78" width="160" height="82" as="geometry" />
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-51" value="+ getCifra():double;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setCifra(double);&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getUnidad():UnidadFisica;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setUnidad(UnidadFisica);&lt;br&gt;+ convertirAUnidad(UnidadFisica):double;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-48">
+          <mxGeometry y="78" width="250" height="82" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-52" value="MagnitudFundamental" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="-3260" width="160" height="150" as="geometry" />
@@ -1601,16 +1601,16 @@
           <mxGeometry y="78" width="160" height="72" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-60" value="UnidadFisica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="-2920" width="160" height="150" as="geometry" />
+          <mxGeometry x="180" y="-2920" width="170" height="170" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-61" value="- nombre : String;&lt;br&gt;- abreviatura : String;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-60">
-          <mxGeometry y="26" width="160" height="44" as="geometry" />
+          <mxGeometry y="26" width="170" height="44" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-62" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-60">
-          <mxGeometry y="70" width="160" height="8" as="geometry" />
+          <mxGeometry y="70" width="170" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="M0lkcr2VyGRREyXFEmg2-63" value="+ getNombre():String;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setNombre(String);&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getAbreviatura():String;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setAbreviatura(String);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-60">
-          <mxGeometry y="78" width="160" height="72" as="geometry" />
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-63" value="+ getNombre():String;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setNombre(String);&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getAbreviatura():String;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setAbreviatura(String);&lt;br&gt;+ convertirAUnidad():double;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-60">
+          <mxGeometry y="78" width="170" height="92" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-64" value="SistemaDeUnidad" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="-3480" width="240" height="170" as="geometry" />
@@ -1621,7 +1621,7 @@
         <mxCell id="M0lkcr2VyGRREyXFEmg2-66" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-64">
           <mxGeometry y="70" width="240" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="M0lkcr2VyGRREyXFEmg2-67" value="+ getNombre():String;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setNombre(String);&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getMagnitudes():List&amp;lt;MagnitudFisica&amp;gt;;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setMagnitudes(List&amp;lt;MagnitudFisica&amp;gt;);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-64">
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-67" value="+ getNombre():String;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setNombre(String);&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ getMagnitudes():List&amp;lt;MagnitudFisica&amp;gt;;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setMagnitudes(List&amp;lt;MagnitudFisica&amp;gt;);&lt;br&gt;+ convertir():void;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-64">
           <mxGeometry y="78" width="240" height="92" as="geometry" />
         </mxCell>
         <mxCell id="M0lkcr2VyGRREyXFEmg2-68" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="M0lkcr2VyGRREyXFEmg2-53" target="M0lkcr2VyGRREyXFEmg2-49">
@@ -1654,7 +1654,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="640" y="-3146" />
-              <mxPoint x="640" y="-2806" />
+              <mxPoint x="640" y="-2796" />
             </Array>
           </mxGeometry>
         </mxCell>
