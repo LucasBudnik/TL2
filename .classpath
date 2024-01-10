@@ -7,5 +7,9 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Anterior"/>
+	<classpathentry kind="src" path="tl2.practica5.ejercicio1"/>
+	<classpathentry kind="src" path="tl2.practica3"/>
+	<classpathentry kind="src" path="tl2.practica4"/>
+	<classpathentry kind="src" path="tl2.practica5.ejercicio2"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
