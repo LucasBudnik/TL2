@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-10T02:43:12.731Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="BmoRbVBZcEnJLioPohuI" version="22.1.17" type="github" pages="14">
+<mxfile host="app.diagrams.net" modified="2024-01-10T02:58:25.023Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="2yF1OVB2PP8OsWVi8vsA" version="22.1.17" type="github" pages="14">
   <diagram name="Robocode" id="bfwevroLSj_1XgWTwHws">
     <mxGraphModel dx="785" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1144,7 +1144,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mGrC5e2M_3JzVijyAvSn" name="Magnitudes Fisicas">
-    <mxGraphModel dx="1598" dy="4858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1897" dy="5041" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1655,6 +1655,29 @@
             <Array as="points">
               <mxPoint x="640" y="-3146" />
               <mxPoint x="640" y="-2796" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-74" value="Conversor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="-2879" width="370" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-75" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-74">
+          <mxGeometry y="26" width="370" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-76" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-74">
+          <mxGeometry y="30" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-77" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ convertirLongitud(double, UnidadFisica, UnidadFisica): double;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ convertirMasa(double, UnidadFisica, UnidadFisica): double;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="M0lkcr2VyGRREyXFEmg2-74">
+          <mxGeometry y="38" width="370" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M0lkcr2VyGRREyXFEmg2-51" target="M0lkcr2VyGRREyXFEmg2-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M0lkcr2VyGRREyXFEmg2-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="M0lkcr2VyGRREyXFEmg2-63" target="M0lkcr2VyGRREyXFEmg2-77">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="-2816" />
+              <mxPoint x="150" y="-2816" />
             </Array>
           </mxGeometry>
         </mxCell>
