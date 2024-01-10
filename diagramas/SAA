@@ -1,0 +1,81 @@
+SAA: 
+
+Aeropuerto :
+- codigoDeAeropuerto: String;
+- georeferenciacion: Georeferenciacion;
+---------------------------------
++ Aeropuerto();
++ Aeropuerto(String, Georeferenciacion);
++ setCodigoDeAeropuerto(codigoDeAeropuerto);
++ setGeoreferenciacion(georeferenciacion);
++ getCodigoDeAeropuerto():codigoDeAeropuerto;
++ getGeoreferenciacion():georeferenciacion;
+---------------------------------
+Georeferenciacion
+- latitud: Double;
+- longitud: Double;
+---------------------------------
++ Georeferenciacion();
++ Georeferenciacion(Double,Double);
++ getLatitud():Double;
++ getLongitud():Double;
++ setLatitud(Double);
++ setLogitud(Double);
+---------------------------------
+Aerolinea:
+- codigoDeAerolinea:String; 
+- vuelos:List<Vuelo>;
+---------------------------------
++ Aerolinea();
++ Aerolinea(String, List<Vuelo>);
++ getCodigoDeAerolinea():String;
++ setCodigoDeAerolinea(String);
++ agregarVuelo(Vuelo);			// Agregamos un vuelo dado
++ eliminarVuelo(Vuelo):boolean; // eliminamos el vuelo de la lista si este existe en la lista
++ validarVuelo(Vuelo):boolean;  // verificamos si existe en la lista de vuelos
++ mostrarVuelos();				// mostramos los vuelos disponibles de la aerolinea
+---------------------------------
+Vuelo:
+- codigoDeVuelo : String;       // codigo de aerolinea + un numero
+- aeropuertoOrigen:Aeropuerto; //(validar aeropuertos que no sean igual el origen al destino)
+- aeropuertoDestino:Aeropuerto; 
+- partida:Date; 				//Date(contiene fecha y hora) // ya existe en java ...
+- llegada:Date;
+- puerta de embarque: String;
+- estadoDePartida: EstadoDePartida;		//(CONFIRMADO, DEMORADO, ENTIEMPO);
+- AvionAsignado:Avion;
+---------------------------------
++ Vuelo();
++ Vuelo(String, Aeropuerto, Aeropuerto, Date, Date, String, EstadoDePartida, Avion);
++ setCodigoDeVuelo(String);
++ getCodigoDeVuelo():String; 
+---------------------------------
+EstadoDePartida
+  CONFIRMADO: int;
+  DEMORADO: int;
+  ENTIEMPO: int;
+---------------------------------
+Avion
+- secciones: List<Seccion>;
+---------------------------------
+Seccion
+- tipo: Tipo;
+- filas: int;
+- columnas: int;
+- asientos: List<Asiento>;
+---------------------------------
+Asiento
+- fila: int;
+- columna: char;
+---------------------------------
+Tipo
++ PRIMERA_CLASE:int;
++ CLASE_EJECUTIVA:int;
++ CLASE_ECONOMICA:int;
+
+
+SAA:
+---------------------------------
+crearAeropuerto();
+crearAerolinea();
+crearVuelo();

@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Interfaces {
+module PracticasTL2 {
 }
