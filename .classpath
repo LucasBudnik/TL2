@@ -15,5 +15,9 @@
 	<classpathentry kind="src" path="tl2.practica5b.ejercicio2"/>
 	<classpathentry kind="src" path="tl2.practica3.ejercicio3"/>
 	<classpathentry kind="src" path="tl2.practica5b.ejercicio3"/>
+	<classpathentry kind="src" path="tl2.practica6.ejercicio1"/>
+	<classpathentry kind="src" path="tl2.practica6.ejercicio2"/>
+	<classpathentry kind="src" path="tl2.practica6.ejercicio3"/>
+	<classpathentry kind="src" path="tl2.practica6.ejercicio4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
