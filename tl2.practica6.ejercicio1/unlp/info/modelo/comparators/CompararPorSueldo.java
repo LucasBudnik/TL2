@@ -1,5 +1,7 @@
-package unlp.info.modelo;
+package unlp.info.modelo.comparators;
 import java.util.*;
+
+import unlp.info.modelo.Empleado;
 
 public class CompararPorSueldo implements Comparator<Empleado> {
 	

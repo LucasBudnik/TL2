@@ -1,4 +1,4 @@
-package unlp.info;
+package unlp.info.Enums;
 
 public enum Etiqueta {
 	CULTURAL,

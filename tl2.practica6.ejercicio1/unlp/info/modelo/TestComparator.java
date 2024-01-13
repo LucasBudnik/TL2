@@ -3,6 +3,10 @@ package unlp.info.modelo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import unlp.info.modelo.comparators.CompararPorApellido;
+import unlp.info.modelo.comparators.CompararPorNombre;
+import unlp.info.modelo.comparators.CompararPorSueldo;
 public class TestComparator {
 
 	public static void main(String[] args) {
