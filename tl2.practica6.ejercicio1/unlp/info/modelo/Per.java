@@ -1,10 +1,11 @@
 package unlp.info.modelo;
 
-public class Persona implements Comparable<Persona> {
+// definimos Per dado que java nos indica que Persona ya fue definida
+public class Per implements Comparable<Per> {
 	private String nombre, apellido;
 	private int edad;
 
-	public Persona(String nombre, String apellido, int edad) {
+	public Per(String nombre, String apellido, int edad) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
@@ -34,7 +35,8 @@ public class Persona implements Comparable<Persona> {
 		this.edad = edad;
 	}
 
-	public int compareTo(Persona o) {
+	@Override
+	public int compareTo(Per o) {
 		if (this.getApellido().equals(o.getApellido())) {
 			return this.getNombre().compareTo(o.getNombre());
 		}

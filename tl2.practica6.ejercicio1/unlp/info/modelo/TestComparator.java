@@ -10,10 +10,10 @@ import unlp.info.modelo.comparators.CompararPorSueldo;
 public class TestComparator {
 
 	public static void main(String[] args) {
-		List<Empleado> empleados = new ArrayList<Empleado>();
-		empleados.add(new Empleado("Lucas", "Zamora", 24, 0, 100.0));
-		empleados.add(new Empleado("Juan", "Alvarez", 18, 1, 50.2));
-		empleados.add(new Empleado("Arturo", "Roman", 20, 8, 300.3));
+		List<Emp> empleados = new ArrayList<Emp>();
+		empleados.add(new Emp("Lucas", "Zamora", 24, 0, 100.0));
+		empleados.add(new Emp("Juan", "Alvarez", 18, 1, 50.2));
+		empleados.add(new Emp("Arturo", "Roman", 20, 8, 300.3));
 		
 		mostrarEmpleados(empleados);
 		System.out.println("------------------- Nombre");
@@ -27,8 +27,8 @@ public class TestComparator {
 		mostrarEmpleados(empleados);
 	}
 
-	public static void mostrarEmpleados(List<Empleado> empleados) {
-		for (Empleado e : empleados) {
+	public static void mostrarEmpleados(List<Emp> empleados) {
+		for (Emp e : empleados) {
 			System.out.println(e.toString());
 		}
 	}

@@ -2,10 +2,10 @@ package unlp.info.modelo.comparators;
 
 import java.util.Comparator;
 
-import unlp.info.modelo.Empleado;
+import unlp.info.modelo.Emp;
 
-public class CompararPorNombre implements Comparator<Empleado>{
-	public int compare(Empleado a, Empleado b) {
+public class CompararPorNombre implements Comparator<Emp>{
+	public int compare(Emp a, Emp b) {
 		return a.getNombre().compareTo(b.getNombre());
 	}
 
