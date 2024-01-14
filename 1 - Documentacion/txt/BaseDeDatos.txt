@@ -1,0 +1,278 @@
+Base De Datos
+
+
+Lección 1 - Bases de datos relacionales
+
+
+
+SGBD SISTEMA DE GESTION DE BASE DE DATOS
+BD BASE DE DATOS
+
+Tabla
+	Registro
+		Campos
+
+
+
+Lección 2 - Consultas I (SQL SELECT FROM WHERE)
+
+
+
+Construccion de una BD
+
+PARA CONSTRUIR UNA CONSULTA SQL:
+	Que datos nos estan pidiendo?
+		SELECT
+	Donde estan esos datos?
+		FROM
+	Que requisitos deben cumplir los registros?
+		WHERE
+
+EJ: 
+	SELECT campo1, campo2, ... , campo n
+	FROM Tabla
+	WHERE condition: Campo > a , campo < a, campo = a
+
+En general : comandos : select, from y where en minuscula y campos en mayusculas
+
+ej 1:
+
+select NOMBRE, APELLIDOS
+from EMPLEADOS
+where SALARIO > 1350
+
+desc / describe TABLA: Fields , Types, NULL, Key, Defaults, Extra
+
+
+
+
+
+Lección 3 - Consultas II (SQL SELECT FROM WHERE)
+
+
+
+CLAUSULAS
+	select
+	from
+	where
+OPERADORES
+	and
+	between
+
+where SALARIO >= 1350 and SALARIO <= 1450
+where SALARIO between 1350 and 1450
+
+
+
+
+
+Lección 4 - Tipos de dato
+
+
+
+
+Cadena: VARCHAR(tamaño)
+Número entero INT:
+Número decimal FLOAT (coma flotante):
+Fecha: DATE aaaammdd
+ 
+
+ where APELLIDOS = 'Rubio Cuestas'
+ej 1:
+	VARCHAR(10)
+	FLOAT
+	INT
+	VARCHAR(40)
+	'Esto es un ejercicio de tipos de datos'
+	DATE
+ej 2:
+	DATE 17890823
+	DATE 19980108
+
+
+
+
+
+
+Leccion 5 - Operadores (SQL WHERE)
+
+
+
+
+select 3 + 4
+where SALARIO > 1300 + 50
+
+Lógica booleana
+Expresiones booleanas
+
+
+Operadores
+Algunos de los operadores que nos permiten construir expresiones booleanas son:
+    > : "A > B" devuelve cierto si A es estrictamente mayor que B, de lo contrario devuelve falso.
+    < : "A < B" devuelve cierto si A es estrictamente menor que B, de lo contrario devuelve falso.
+    = : "A = B" devuelve cierto si A es igual a B, de lo contrario devuelve falso.
+    >= : "A >= B" devuelve cierto si A es mayor o igual a B, de lo contrario devuelve falso.
+    <= : "A <= B" devuelve cierto si A es menor o igual a B, de lo contrario devuelve falso.
+    != : "A != B" devuelve cierto si A es distinto a B, de lo contrario devuelve falso.
+
+Operadores Logicos
+    AND : "A and B" devuelve cierto si A y B valen cierto, y falso en cualquier otro caso.
+    OR : "A or B" devuelve cierto si A o B valen cierto, y falso únicamente cuando tanto A como B valen falso.
+    NOT : "not A" devuelve falso si A vale cierto, y cierto si A vale falso.
+
+     Operador between es parte de estos.
+
+     select * // seleccionamos todos los campos
+      from EMPLEADOS
+     where ID_EMPLEADO = 1 or ID_EMPLEADO = 2 or ID_EMPLEADO = 4 // ejemplo de implementacion del or.
+
+
+     Agregamos el IN que nos permite simplificar la ultima linea:
+     where ID_EMPLEADO in (1,2,4)
+
+     Implementaciones de NOT
+EJERCICIOS 1:
+	select *
+	from PERSONAS
+	where (ALTA = 'S') or ((RUBIA = 'S') and (GAFAS = 'S'))
+EJERCICIO 2: 
+	select *	
+	from EMPLEADOS
+	where (SEXO = 'M') and (SALARIO > 1500)
+EJERCICIO 3: 	
+	select *
+	from PERSONAS
+	where not (ALTA = 'S') and not (RUBIA = 'S') and (GAFAS = 'S')
+EJERCICIO 4: 
+	cierto
+
+
+
+
+
+
+
+Lección 6 - Totalizar datos / Alias de campos (SQL as)
+
+
+
+
+	SUM(campo): suma todos los elementos en ese campo
+	COUNT(*): cuenta la cantidad de registros
+	AS : LE ASIGNA UN NOMBRE AL CAMPO DE SALIDA
+	AVG(campo) calcula el promedio = SUM(CAMPO)/COUNT(*)
+	MAX(campo) devuelve el maximo de los elementos de la columma
+	MIN(campo) devuelve el minimo de los elementos de la columma
+
+EJERCICIO 1
+select AVG(SALARIO) as MEDIA_SALARIO
+from   EMPLEADOS
+where  (SEXO = 'H')
+EJERCICIO 2
+select MAX(SALARIO) as MAYORSALARIO, MIN(SALARIO) as MENORSALARIO
+from EMPLEADOS
+EJERCICIO 3
+select SUM(SALARIOas COSTO_TOTAL_MUJERES
+from EMPLEADOS
+where (SEXO = 'M')
+
+
+
+
+
+Leccion 7 AGRUPACION DE DATOS (SQL GROUP BY):
+
+
+
+
+    select SEXO , count(*) as EMPLEADOS
+        from EMPLEADOS
+    group by SEXO
+
+Clausula group by me permite agrupar dado un campo de terminado, y realizarle una operacion para obtener una sola fila
+
+select distinct campo : me  indica que valores existen dentro de ese camp
+o
+
+
+
+Ejercicio 1
+Construya una consulta que devuelva el salario medio, máximo y mínimo de los empleados agrupado por sexo.
+
+select SEXO, AVG(SALARIO) as MEDIO, MAX(SALARIO) as MAXIMO, MIN(SALARIO) as MINIMO
+from EMPLEADOS
+group by SEXO
+
+Ejercicio 2
+Construya una consulta que devuelva cuantos perros y cuantos gatos han pasado por el centro y ya no están.
+
+select ESPECIE , COUNT(*) as BAJAS
+from MASCOTAS
+where ESTADO = 'B'
+group by ESPECIE
+
+Ejercicio 3
+Construya una consulta que devuelva cuantos perros macho hay actualmente en el centro agrupado por ubicación.
+
+select UBICACION, COUNT(*) as CANTIDADDEPERROSMACHOS
+from MASCOTAS
+where ESPECIE = 'P' and SEXO = 'M' and not ESTADO = 'A'
+group by UBICACION 
+
+Ejercicio 4
+Con ayuda del filtro DISTINCT, construya una consulta que devuelva las diferentes especies que hay actualmente en cada jaula o ubicación del centro.
+
+select distinct UBICACION, disctinct ESPECIE 
+from MASCOTAS
+where ESTADO ='A'
+
+
+
+
+
+Lección 8 - Filtrar cálculos de totalización (SQL HAVING)
+
+
+
+agregamos la clausula having, que me permite actuar sobre los datos totalizados
+
+
+Ejercicio
+Usando el operador BETWEEN que vimos en las lecciones 3 y 5, construye una consulta que devuelva las ubicaciones del centro de mascotas que tiene entre 2 y 3 ejemplares.
+
+select UBICACION as EJEMPLARES
+from MASCOTAS
+where ESTADO = 'A'
+group by UBICACION
+having COUNT(*) between 2 and 3
+
+
+
+
+Lección 9 - Ordenación del resultado (SQL ORDER BY)
+
+se nos suma la ultima clausula donde indicamos el orden: 
+
+order by 
+
+Ejercicio 1
+Obtenga una lista de las personas de la tabla PERSONAS, donde primero aparezcan las rubias, después las altas, y finalmente las que llevan gafas. De manera que la primera persona de la lista, si la hay, será rubia alta y sin gafas, y la última, si la hay, no será rubia ni alta y llevará gafas.
+
+select *
+from PERSONAS
+order by RUBIA desc , ALTA desc , ALTA
+
+Ejercicio 2
+Obtenga el número actual de ejemplares de cada ubicación del centro de mascotas, que tengan dos o más ejemplares ordenado de mayor a menor por número de ejemplares y en segundo termino por ubicación.
+
+
+
+
+
+
+
+
+
+
+
+
