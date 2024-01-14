@@ -1,0 +1,372 @@
+SAA: 
+
+------------------------------------------------------------------------- AEROPUERTOS
+---------------------------------
+Aeropuerto
+---------------------------------
+- codigoDeAeropuerto: String;
+- georeferenciacion: Georeferenciacion;
+- pais: Pais;
+---------------------------------
++ Aeropuerto();
++ Aeropuerto(String, Georeferenciacion);
++ setCodigoDeAeropuerto(codigoDeAeropuerto);
++ setGeoreferenciacion(georeferenciacion);
++ getCodigoDeAeropuerto():codigoDeAeropuerto;
++ getGeoreferenciacion():georeferenciacion;
++ getPais():Pais;
++ setPais(Pais);
+---------------------------------
+
+---------------------------------
+Pais
+---------------------------------
+- nombre:String;
+- visitas: int;
+---------------------------------
++ getNombre():String;
++ setNombre(String);
++ getVisitas():int;
++ setVisitas(int);
+---------------------------------
+
+
+---------------------------------
+Georeferenciacion
+---------------------------------
+- latitud: Double;
+- longitud: Double;
+---------------------------------
++ Georeferenciacion();
++ Georeferenciacion(Double,Double);
++ getLatitud():Double;
++ getLongitud():Double;
++ setLatitud(Double);
++ setLogitud(Double);
+---------------------------------
+-------------------------------------------------------------------------
+
+------------------------------------------------------------------------- AEROLINEAS
+---------------------------------
+Aerolinea
+---------------------------------
+- codigoDeAerolinea:String; 
+- vuelos:List<Vuelo>;
+---------------------------------
++ Aerolinea();
++ Aerolinea(String, List<Vuelo>);
++ getCodigoDeAerolinea():String;
++ setCodigoDeAerolinea(String);
++ agregarVuelo(Vuelo);			// Agregamos un vuelo dado
++ eliminarVuelo(Vuelo):boolean; // eliminamos el vuelo de la lista si este existe en la lista
++ validarVuelo(Vuelo):boolean;  // verificamos si existe en la lista de vuelos
++ mostrarVuelos();				// mostramos los vuelos disponibles de la aerolinea
+---------------------------------
+
+
+------------------------------------------------------------------------- VUELOS
+
+---------------------------------
+Vuelo
+---------------------------------
+- codigoDeVuelo : String;       
+- aeropuertoOrigen:Aeropuerto; 
+- aeropuertoDestino:Aeropuerto; 
+- partida:Date; 				
+- llegada:Date;
+- puertaDeEmbarque: String;
+- estadoDePartida: EstadoDePartida;		
+- AvionAsignado:Avion;
+- costoExtra: Double;
+- asignarAsiento: AsignarAsiento;
+- tripulacion: Tripulacion;
+- pasajeros: List<PasajeroABordo>;
+---------------------------------
++ Vuelo();
++ Vuelo(String, Aeropuerto, Aeropuerto, Date, Date, String, EstadoDePartida, Avion, Double);
++ setCodigoDeVuelo(String);
++ getCodigoDeVuelo():String; 
++ setAeropuertoDeOrigen(Aeropuerto);
++ getAeropuertoDeOrigen():Aeropuerto;
++ setAeropuertoDestino(Aeropuerto);
++ getAeropuertoDestino():Aeropuerto;
++ setPartida(Date);
++ getPartida():Date;
++ setLlegada(Date);
++ getLlegada():Date;
++ setPuertaDeEmbarque(String);
++ getPuertaDeEmbarque():String;
++ setEstadoDePartida(EstadoDePartida);
++ getEstadoDePartida():EstadoDePartida;
++ setAvionAsignado(Avion);
++ getAvionAsignado():Avion;
++ getCostoExtra():Double;
++ setCostoExtra(Double);
++ setTripulacion(Tripulacion);
++ getTripulacion():Tripulacion;
++ agregarPasajero(Pasajero):boolean;
++ eliminarPasajero(Pasajero):boolean;
++ asientosDisponibles():List<Asiento>;
++ calcularAsientosDisponibles(): int;
++ validarAeropuertoDeOrigenYDestino(Aeropuerto, Aeropuerto): boolean;
++ validarPartidaYLlegada(Date, Date):boolean;
+---------------------------------
+
+
+---------------------------------
+PasajeroABordo
+---------------------------------
+- pasajero: Pasajero;
+- check-in: boolean;
+---------------------------------
++ getCheck-in():boolean;
++ setCheck-in(boolean);
+---------------------------------
+
+
+---------------------------------
+Tripulacion
+---------------------------------
+- piloto: Piloto;
+- co-piloto: String;
+- comandanteDeAbordo:String;
+- auxiliarDeVuelo: String;
+---------------------------------
++ Tripulacion();
++ Tripulacion(Piloto, String, String, String);
++ getPiloto():Piloto;
++ getCo-piloto():String;
++ getComandanteDeAbordo():String;
++ getAuxiliaDeVuelo():String;
++ setPiloto(Piloto);
++ setCo-piloto(String);
++ setComandanteDeAbordo(String);
++ setAuxiliarDeVuelo(String);
+---------------------------------
+
+
+---------------------------------
+Piloto
+---------------------------------
+- nombre:String;
+- vuelos: List<Vuelo>;
+- aerolineas: List<Aerolinea>;
+---------------------------------
++ Piloto();
++ Piloto(String, List<Vuelo>, List<Aerolinea>);
+
++ getNombre():String;
++ setNombre(String);
+
++ agregarVuelo(Vuelo);
++ eliminarVuelo(Vuelo):boolean;
++ validarVuelo(Vuelo):boolean;
++ mostrarHistorialDeVuelos();
+
++ agregarAerolinea(Aerolinea);
++ eliminarAerolinea(Aerolinea):boolean;
++ validarAerolinea(Aerolinea):boolean;
++ mostrarHistorialDeAerolineas();
+---------------------------------
+
+
+
+
+---------------------------------
+EstadoDePartida
+---------------------------------
++ CONFIRMADO: EstadoDePartida;
++ DEMORADO: EstadoDePartida;
++ ENTIEMPO: EstadoDePartida;
+---------------------------------
+
+
+---------------------------------
+AsignarAsiento // sin costo adicional (Extra)
+---------------------------------
++ asignarAsiento(Vuelo, Pasajero):Asiento;
++ calcularCargaYBalanceo(Seccion):Double;
++ encontrarAsientoAdecuado(Seccion):Asiento;
+---------------------------------
+
+
+
+------------------------------------------------------------------------- AVIONES
+---------------------------------
+Avion
+---------------------------------
+- secciones: List<Seccion>;
+---------------------------------
++ Avion();
++ Avion(List<Seccion>);
++ agregarSeccion(Seccion);
++ eliminarSeccion(Seccion):boolean;
++ validarSeccion(Seccion):boolean;
+---------------------------------
+
+
+
+---------------------------------
+Seccion
+---------------------------------
+- clase: Clase;
+- filas: int;
+- columnas: int;
+- asientos: List<Asiento>;
+- pesoPermitido: Double;
+- costo: Double;
+---------------------------------
++ Seccion();
++ Seccion(Clase, int, int, List<Asiento>, Double, Double);
++ getTipo():Clase;
++ setTipo(Clase);
++ getFilas():int;
++ setFilas(int);
++ getColumnas():int;
++ setColumnas(int);
++ getPesoPermitido():Double;
++ setPesoPermitido(Double);
++ getCosto():Double;
++ setCosto(Double);
++ agregarAsiento(Asiento);
++ eliminarAsiento(Asiento):boolean;
++ validarAsiento(Asiento):boolean;
++ calcularCantidadDeAsientoLibres():int;
+---------------------------------
+
+
+
+
+---------------------------------
+Asiento
+---------------------------------
+- fila: int;
+- columna: char;
+- estaReservado: boolean;
+---------------------------------
++ Asiento();
++ Asiento(int, char, boolean);
++ setColumna(char);
++ getColumna():char;
++ setFila(int);
++ getFila():int;
++ getEstaReservado():boolean;
++ setEstaReservado(boolean);
+---------------------------------
+
+---------------------------------
+Clase
+---------------------------------
++ PRIMERA_CLASE:Clase;
++ EJECUTIVA:Clase;
++ ECONOMICA:Clase;
++ TURISTICA:Clase;
++ TRANSITO: Clase; // para pasajeros que hacen escala
+---------------------------------
+-------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------- PASAJEROS
+---------------------------------
+Pasajero
+---------------------------------
+- id: String;
+- nombre: String;
+- peso: Double;
+- vuelo: List<Vuelo>;
+- reservas: List<Reserva>;
+- denunciasRealizadas: List<Denuncia>;
+---------------------------------
++ Pasajero();
++ Pasajero(String, String, Double);
++ validarPasajero(Pasajero, Pasajero);
++ getId():String;
++ getNombre():String;
++ getPeso():Double;
++ setId(String);
++ setNombre(String);
++ setPeso(Double);
+
++ agregarReserva(Reserva):boolean;
++ agregarDenuncia(Denuncia):booleanClase;
+---------------------------------
+
+---------------------------------
+Reserva
+---------------------------------
+- asiento: Asiento;
+- clase: Clase;
+- vuelo: Vuelo;
+---------------------------------
++ Reserva(Vuelo, Clase, Asiento);
+---------------------------------
+
+
+
+---------------------------------
+Denuncia
+---------------------------------
+- pasajero: Pasajero;
+- vuelo: Vuelo;
+- comentario: String;
+- foto: Foto;
+---------------------------------
++ Denuncia();
++ Denuncia(Pasajero, Vuelo, String, Foto);
++ Denuncia(Pasajero, Vuelo, String ); 
++ setPasajero(Pasajero);
++ setVuelo(Vuelo);
++ setComentario(String);
++ setFoto(Foto);
++ getComentario():String;
++ getFoto():Foto;
++ getVuelo():Vuelo;
++ getPasajero():Pasajero;
+---------------------------------
+
+
+
+
+---------------------------------
+Foto
+---------------------------------
++ data: byte[];
++ format: String;
+---------------------------------
+
+
+
+------------------------------------------------------------------------- SAA
+---------------------------------
+SAA
+---------------------------------
+- aerolineas: List<Aerlinea>;
+- aeropuertos: List<Aeropuerto>;
+- vuelos: List<Vuelo>;
+- aviones: List<Avion>;
+- pasajeros: List<Pasajero>;
+- pilotos: List<Piloto>;
+- denuncias: List<Denuncia>;
+- paises: List<Pais>;
+---------------------------------
+
++ crearAeropuerto(Scanner):Aeropuerto;
++ crearAerolinea(Scanner):Aerolinea;
++ crearVuelo(Scanner):Vuelo;
++ crearAvion(Scanner):Avion;
++ crearPasajero(Scanner):Pasajero;
+
++ agregarAeropuerto():boolean;
++ agregarAerolinea():boolean;
++ agregarVuelo();
++ agregarPasajero():boolean;
++ agrearAvion():boolean;
+
++ emitirReporteGeneral();
++ EncontrarVuelos(Aeropuerto, Aeropuerto): List<Vuelo>;
++ calcularPaisMasVisitado():int;
+---------------------------------
+
+

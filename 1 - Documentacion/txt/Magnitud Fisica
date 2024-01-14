@@ -1,0 +1,103 @@
+Magnitud Fisica
+
+
+Magnitud Fisica
+- cifra
+- unidad
+	Magnitud Fundamental // son aquellas que para su definicion no es necesario recurrir a otras magnitudes
+		-UnidadFundamental o Dimension
+			-magnitud
+			-unidad
+			-abreviatura
+				Longitud
+				Masa
+				Tiempo	
+	Magnitud Derivada 	 // Aquellas para las cuales se debe recurrir a una o mas magnitudes fundamentales para su definicion
+
+
+--------------
+MagnitudFisica
+--------------
+- abreviatura: String;
+- cifra:double;
+- unidad:String;
+--------------
++ getCifra():double;
++ getUnidad():String;
++ getAbreviatura():String;
+
++ setCifra(double);
++ setUnidad(String);
++ setAbreviatura(String);
+--------------
+
+
+--------------
+MagnitudFundamental
+--------------
+- Dimension
+--------------
++ getDimension():;
++ setDimension();
+--------------
+
+	ext
+	--------------
+	Longitud
+	--------------
+
+	--------------
+	Masa
+	--------------
+
+	--------------
+	Tiempo
+	--------------
+
+	
+
+--------------
+MagnitudDerivada
+--------------
+--------------
+--------------
+
+	--------------
+	Superficie
+	--------------
+
+	--------------
+	Volumen
+	--------------
+
+	--------------
+	Velocidad
+	--------------
+
+--------------
+SistemaDeUnidad
+--------------
+	--------------
+	SistemaAbsolutoIngles
+	--------------
+
+		--------------
+		Longitud
+		--------------
+
+		--------------
+		Masa
+		--------------
+
+		--------------
+		Tiempo
+		--------------
+
+--------------
+EquivalenciaEntreSistema
+--------------
+-magnitud
+-sistemaInternacional
+-sistemaIngles
+--------------
+--------------
