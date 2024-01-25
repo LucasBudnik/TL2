@@ -268,8 +268,66 @@ Obtenga el número actual de ejemplares de cada ubicación del centro de mascota
 
 
 
+Leccion 10 - NULL / LIKE
+
+Like :  where APELLIDOS like '%AR%' 
+like nos permite una seleccion a partir de elementos que se encuentren dentro de la palabra.
+
+obvio se agrega el operador is
+que nos determina si es null o no es null
+null :  where ULTI_ITV is null
+null nos permite condicionar a las variables que no contengan elementos (que sean vacias) dentro de su sintaxis se usa 'is null'.
+incluso podemos combinarlo con is not null
 
 
+Ejercicio 1
+select *
+from EMPLEADOS
+where APELLIDOS like "%Calvo%"
+
+Ejercicio 2
+select *
+  from VEHICULOS
+ where (ULTI_ITV is null) and (PROX_ITV like "2011%")
+
+
+Lección 11 - Síntesis de la primera parte
+
+Ejercicio se trata de una tabla con  2 columnas: 
+ganancia y fecha;
+ID_SESION : int;
+GANANCIA : float;
+FECHA : Date;
+
+select SUM(GANANCIA)
+from POKER
+where FECHA between (20090301 and 20090331)
+
+Lección 12 - El producto cartesiano (SQL FROM)
+
+producto carteciano refiere a cuando mostramos el contenido de mas de una tabla
+donde los elementos se mostraran todas las combinaciones posibles
+
+si tenemos mas de una tabla con el mismo nombre de campo podemos seleccionar a cual campo queremos referir de la forma:
+select TABLA1.CAMPO, TABLA2.CAMPO
+from TABLA1, TABLA2
+
+ademas para simplificar la cuestion podemos renombrar las tablas para que esto sea mas intuitivo:
+select t1.CAMPO, t2.CAMPO
+from TABLA1 as t1, TABLA2 as t2
+
+podemos concatenar resultados y sumar de la forma:
+select CAMPO1+CAMPO2, CONCAT('CAMPO1: ',CAMPO1, 'CAMPO2: ', CAMPO2), 'CAMPO1'||CAMPO1||'CAMPO2'||CAMPO2
+from TABLA1, TABLA2
+
+
+EJERCICIO 1
+select P.PANTALON, C.CALZADO
+from PANTALONES as P, CALZADOS as C
+
+EJERCICIO 2
+10*12 = 120 registros 
+4+7 = 11 Columnas
 
 
 
