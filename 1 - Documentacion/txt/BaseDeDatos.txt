@@ -330,6 +330,7 @@ EJERCICIO 2
 4+7 = 11 Columnas
 
 
+Lección 13 - Consultas III (SQL SELECT FROM WHERE)
 
 
 
