@@ -7,13 +7,15 @@ Lección 1 - Bases de datos relacionales
 
 SGBD SISTEMA DE GESTION DE BASE DE DATOS
 BD BASE DE DATOS
-
-Tabla
-	Registro
-		Campos
-
-
-
+--------------------------
+|Tabla			 |
+|       -----------------|
+|	|Registro	||
+	|       --------||
+|	|       |Campos|||
+|	-----------------|
+|			 |
+--------------------------
 Lección 2 - Consultas I (SQL SELECT FROM WHERE)
 
 

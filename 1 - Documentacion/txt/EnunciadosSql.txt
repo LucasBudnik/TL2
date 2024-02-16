@@ -1,0 +1,362 @@
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 2
+Ejercicio
+Intente hallar una consulta que devuelva el nombre, apellidos y la fecha de nacimiento de aquellos empleados que cobren más de 1350 euros
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 3
+Ejercicio
+Intente hallar una consulta que devuelva el nombre y apellidos de los empleados que cobren menos de 1350 euros.
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 4
+Ejercicio 1
+Defina de que tipo de dato crearía los campos, y su tamaño mínimo si se tercia, para albergar los siguientes datos:
+
+    'Hola mundo'
+
+    9.36
+
+    4564
+
+    'Esto es un ejercicio de tipos de datos'
+
+    8 de enero de 1998
+
+Ejercicio 2
+Formatee en una cadena, según se ha visto en esta lección, las siguientes fechas.
+
+    23 de agosto de 1789
+
+    8 de enero de 1998
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+ Leccion 5
+
+ Ejercicio 1
+Cree una consulta SQL que devuelva las personas que son altas, o bien son rubias con gafas.
+
+Ejercicio 2
+Cree una consulta SQL que devuelva los empleados que son mujer y cobran más de 1300 euros.
+
+    En la tabla empleados se guarda una "H" en el campo SEXO para indicar que es hombre, o una "M" para indicar que es mujer.
+
+Ejercicio 3
+Usando solo expresiones (ALTA = 'S') , (RUBIA = 'S') , (GAFAS = 'S') combinadas con el operador NOT resuelva:
+¿Quién es quién? Lleva gafas y no es alta ni rubia.
+
+Ejercicio 4 (optativo)
+Suponiendo que A vale cierto y B vale falso, evalúe la siguiente expresión booleana:
+
+C= ((A and B) and (A or (A or B))) or A
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 6
+
+Ejercicio 1
+En todos los ejemplos de esta lección se ha omitido la clausula WHERE, construya una consulta, donde necesitará establecer una condición en la clausula WHERE, que devuelva el salario medio de los empleados que son hombres. Renombre la cabecera del resultado con un titulo que deje claro que dato se está mostrando.
+
+Ejercicio 2
+Construya una consulta que devuelva en la misma fila el salario máximo y mínimo de entre todos los empleados. Renombre las cabeceras de resultados con un titulo que deje claro que datos se están mostrando.
+
+Ejercicio 3
+Construya una consulta que responda a lo siguiente: ¿Que cuesta pagar a todas las mujeres en total? Renombre la cabecera del resultado con un titulo que deje claro que dato se está mostrando.
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 7
+Ejercicio 1
+Construya una consulta que devuelva el salario medio, máximo y mínimo de los empleados agrupado por sexo.
+
+Ejercicio 2
+Construya una consulta que devuelva cuantos perros y cuantos gatos han pasado por el centro y ya no están.
+
+Ejercicio 3
+Construya una consulta que devuelva cuantos perros macho hay actualmente en el centro agrupado por ubicación.
+
+Ejercicio 4
+Con ayuda del filtro DISTINCT, construya una consulta que devuelva las diferentes especies que hay actualmente en cada jaula o ubicación del centro.
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 8
+Ejercicio
+Usando el operador BETWEEN que vimos en las lecciones 3 y 5, construye una consulta que devuelva las ubicaciones del centro de mascotas que tiene entre 2 y 3 ejemplares.
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 9
+Ejercicio 1
+Obtenga una lista de las personas de la tabla PERSONAS, donde primero aparezcan las rubias, después las altas, y finalmente las que llevan gafas. De manera que la primera persona de la lista, si la hay, será rubia alta y sin gafas, y la última, si la hay, no será rubia ni alta y llevará gafas.
+
+Ejercicio 2
+Obtenga el número actual de ejemplares de cada ubicación del centro de mascotas, que tengan dos o más ejemplares ordenado de mayor a menor por número de ejemplares y en segundo termino por ubicación.
+
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 10
+
+Ejercicio 1
+¿Qué empleados se apellidan Calvo?
+
+Ejercicio 2
+Considerando que en la tabla VEHICULOS el campo PROX_ITV guarda la fecha de la próxima ITV que ha de pasar cada vehículo:
+¿Qué vehículos que nunca han pasado la ITV deben pasar la primera revisión durante el año 2011?
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 11
+Ejercicio
+Supongamos que usted tiene un amigo que es jugador de póquer, el pobre no sabe si sus ganancias en el juego son positivas o negativas porque no lleva un control sobre ello, por lo que usted se ofrece a gestionarle las ganancias. Le dice a su amigo que cuando acabe una sesión de juego le comunique a usted el dinero que ha ganado o perdido, entendiendo perdida como una ganancia o número en negativo.
+
+Diseñe una tabla, es decir, los campos y tipo de dato de cada campo, para poder registrar la información que su amigo le facilita, y mediante SQL pueda responder en cualquier momento a las siguientes preguntas:
+
+¿Cuales son las ganancias actuales?
+¿Cuanto dinero se ganó durante el mes de marzo de 2009?
+
+Una vez diseñada la tabla construya las consultas SQL que responden a cada una de estas preguntas.
+
+
+---------------------------------------------------------------
+Leccion 12
+Ejercicio 1
+Realice una consulta que devuelva las combinaciones posibles entre los pantalones y los calzados, sin más columnas que la descripción de cada prenda. Use alias de tabla para indicar a que tabla pertenece cada campo de la cláusula SELECT.
+
+Ejercicio 2
+Si en una BD existe una tabla T1 con 4 campos y 12 registros, y una tabla T2 con 7 campos y 10 registros, ¿cuantas filas y columnas devolvería la siguiente consulta?
+
+
+
+
+
+---------------------------------------------------------------
+Leccion 13
+
+Ejercicio 1
+Construya una consulta SQL que devuelva el peso medio de todas las mudas confeccionables entre camisas y pantalones. Modifique la consulta para obtener el mismo resultado entre camisas, pantalones y calzados.
+
+Ejercicio 2
+Construya una consulta SQL que devuelva el peso medio de todas las mudas confeccionables entre camisas y pantalones agrupado por camisa. Modifique la consulta de manera que devuelva el mismo resultado pero de los grupos que el peso medio es superior a 850 gramos.
+
+Ejercicio 3
+Construya una consulta SQL que devuelva las combinaciones de las camisas con los pantalones de manera que: la primera camisa se combine con todos los pantalones menos con el primero, la segunda camisa se combine con todos los pantalones menos con el segundo, y así sucesivamente.
+
+Ejercicio 4
+Construye una consulta que devuelva la lista de prendas de una maleta que contiene todos las camisas, pantalones y calzados.
+
+---------------------------------------------------------------
+Leccion 14
+Ejercicio 1
+Construya una consulta que devuelva los cursos en que se ha matriculado el alumno con identificador 1.
+
+Modifique la anterior consulta para que devuelva los nombres y apellidos de los alumnos, y los cursos en que se han matriculado, tales que el nombre de pila del alumno contenga un E.
+
+Ejercicio 2
+¿Cuantos cursos imparte cada profesor? Construya una consulta que responda a esta cuestión de modo que el resultado muestre el nombre completo del profesor acompañado del número de cursos que imparte.
+
+Ejercicio 3
+¿Cuantos alumnos hay matriculados en cada uno de los cursos? Construya una consulta que responda a esta cuestión de modo que el resultado muestre el titulo del curso acompañado de el número de alumnos matriculados.
+
+Modifique la anterior consulta de modo que muestre aquellos cursos que el número de alumnos matriculados sea exactamente de dos alumnos.
+
+Ejercicio 4
+Si ahora a usted le pidiesen que adaptara la BD, que consta de las tres tablas presentadas en esta lección, a la siguiente necesidad: A todo alumno se le asignara un profesor que lo tutele. ¿Que cambios realizaría en la BD?
+
+
+
+
+
+Leccion 15
+
+Ejercicio 1
+Construya una consula que resuelva el número de cursos que imparte cada profesor usando la cláusula INNER JOIN.
+
+Ejercicio 2
+Realice una consulta entre las tablas CURSOS, ALUMNOS y ALUMNOS_CURSOS de modo que aparezcan los alumnos matriculados en cada curso pero mostrando todos los cursos aunque no tengan alumnos matriculados.
+
+
+
+
+
+
+
+
+
+
+
+Leccion 16
+
+Ejercicio
+Modifique el modelo entidad-relacion presentado en esta lección para que considere la siguiente premisa: Todo alumno tendrá un profesor que lo tutele.
+
+
+
+
+
+
+
+
+Leccion 17
+Ejercicio 1
+Realice una consulta que devuelva la media de salarios de la tabla EMPLEADOS agrupado por sexo. Redondee la media de salarios a un solo decimal y decodifique la columna sexo para que aparezca el literal HOMBRES y MUJERES en lugar de H y M. No olvide rebautizar las columnas con un alias apropiado.
+
+Ejercicio 2
+Realice una consulta sobre la tabla EMPLEADOS que devuelva el nombre, los apellidos, la fecha de nacimiento y la edad actual en años de cada empleado. Para aquellos empleados con 18 años o más.
+Nota: la edad de un empleado en años es el número de días transcurridos desde el nacimiento dividido entre los 365 días que tiene un año.
+
+Ejercicio 3
+Realice una consulta sobre la tabla vehículos que devuelva el número de vehículos que deben pasar la revisión agrupado por el año en que deben pasarla.
+
+
+
+
+
+
+Leccion 18
+
+Ejercicio 1
+Construya una instrucción de inserción en la tabla CURSOS para guardar un nuevo curso de pintura y asígnele una clave que no entre en conflicto con la existentes, posteriormente construya la instrucción para eliminar de la tabla el registro que acaba de crear.
+
+Ejercicio 2
+En esta lección se puso como ejemplo la actualización del salario de los empleados donde este se incrementaba un 2% para empleados con un sueldo inferior a 3000 euros. Sin embargo no parece muy justo que un empleado con un sueldo de 3000 Euros no reciba incremento alguno, y otros que rozan los 3000 euros pero no llegan reciban el incremento superando el importe de corte una vez aplicado dicho incremento. Construya una instrucción de actualización, que se debería ejecutar previamente, de modo que evite que para estos empleados el resultado del incremento sea superior a 3000 euros. Para ello esta instrucción debe actualizar el salario de los empleados afectados a 3000 euros, para que cuando se realice el incremento no se les aplique la subida puesto que su sueldo será entones de 3000 euros justos.
+
+
+
+
+
+
+
+Leccion 19
+Ejercicio 1
+Supongamos que tenemos las siguientes entidades en un modelo relacional que gestiona la liga profesional de fútbol: EQUIPOS y JUGADORES. La cardinalidad de esta relación es 1 a N, puesto que un equipo tiene una plantilla de N jugadores mientras que un jugador milita en un solo equipo. ¿Es JUGADORES una entidad débil?
+
+Ejercicio 2
+Supongamos que tenemos las siguientes entidades en un modelo relacional que gestiona las reparaciones del alumbrado público de una urbanización: FAROLAS y REPARACIONES. La cardinalidad de esta relación es 1 a N, puesto que a una farola se le realizan N reparaciones mientras que una reparación se practica a una farola. ¿Es REPARACIONES una entidad débil?
+
+Ejercicio 3
+Supongamos que tenemos las siguientes entidades en un modelo relacional que gestiona la actividad de un almacén de distribución de generó: ARTICULOS y FAMILIAS. La cardinalidad de esta relación es 1 a N, puesto que una familia agrupa N artículos mientras que un artículo pertenece a una sola familia. ¿Es ARTICULOS una entidad débil?
+
+
+
+
+
+
+
+
+
+Leccion 20
+
+VER TABLAS DE LA PAGINA
+
+
+
+Ejercicio 1
+Desarrolle un informe que muestre los pronósticos de una quiniela, pruebe su funcionamiento con la quiniela de identificador 4.
+
+Resultado a obtener:
+
+
+Ejercicio 2
+Desarrolle un informe que muestre la combinación ganadora de una jornada, pruebe su funcionamiento con la jornada de identificador 3.
+
+Resultado a obtener:
+
+
+Ejercicio 3.1
+Desarrolle un informe que escrute una quiniela, es decir, que muestre los eventos en los que se acertó el resultado. Pruebe el funcionamiento con la quiniela de identificador 6.
+Nota: Deberá usar la función IF para calcular la columna ACIERTO.
+
+Resultado a obtener:
+
+
+Ejercicio 3.2
+Tomando como patrón la consulta resultante del ejercicio 3.1, desarrolle una consulta que calcule los aciertos de las quinielas, es decir, escrute las quinielas. Agrupe los datos por quiniela. Si una quiniela no tiene ningún acierto no es necesario que aparezca en la lista resultante.
+
+Resultado a obtener:
+
+
+Añadale un filtro para poder calcular los aciertos de una quiniela concreta. Este dato es especialmente útil para que un usuario, o un proceso automático, pueda actualizar el campo ACIERTOS de la tabla QUINIELAS, que contiene un valor nulo hasta que se conocela la combinación ganadora y, en consecuencia, el dato a atualizar una vez escrutada la quiniela.
+
+Ejercicio 3.3
+Desarrolle una consulta que calcule los aciertos de las quinielas pero esta vez considerando las quinielas que no presentan ningún acierto.
+
+Resultado a obtener:
+
+
+Ejercicio 4
+Desarrolle un informe que muestre la media de aciertos agrupado por jornada. No considere quinielas de jornadas no disputadas. No es necesario recalcular los aciertos de las quinielas, en su lugar use el campo ACIERTOS de la tabla QUINIELAS.
+
+Resultado a obtener:
+
+
+Ejercicio 5
+Desarrolle un informe que muestre la media de aciertos agrupado por meses. No considere quinielas de jornadas no disputadas, ni recalcule los aciertos de las quinielas.
+Nota: deberá utilizar la función DATE_FORMAT(FECHA_A_FORMATEAR,'%m-%Y') de MySQL para poder agrupar por mes-año.
